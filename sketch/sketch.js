@@ -4,20 +4,16 @@ function setup() {
 }
 
 function draw() {
-  var x = 10
-
-  rect(x, 10, 10, 10)
-  x = x + 20
-
-  rect(x, 10, 10, 10)
-  x = x + 20
-
-  rect(x, 10, 10, 10)
-  x = x + 20
-
-  rect(x, 10, 10, 10)
-  x = x + 20
-
-  rect(x, 10, 10, 10)
-  x = x + 20
+  function draw() {
+    var x = 10
+    var count = 5
+  
+    var i = 0
+    while (i < count) {
+      rect(x, 10, 10, 10)
+      x = x + 20
+  
+      i = i + 1
+    }
+  }
 }
